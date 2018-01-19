@@ -1,0 +1,87 @@
+/*
+Theme Name: Udacity Landing Page
+Theme URI: http://keendevs.com
+Author: Azizul Haque
+Author URI: http://keendevs.com
+Version:1.0
+*/
+label.gfield_label {
+    display: none !important;
+}
+body .gform_wrapper ul li.gfield{
+	margin-top: 0 !important;
+}
+select#input_1_13 {
+    width: 100%;
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){
+	padding:5px 8px !important;
+}
+.gform_wrapper .top_label li.gfield.gf_right_half, li#field_1_13{
+	padding-right: 18px !important;
+}
+.gform_wrapper.gf_browser_chrome select {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    outline: none;
+    color: #7d97ad;
+    vertical-align: top;
+    height: 3rem;
+    border: 1px solid #dbe2e8;
+    padding: 0 1.25rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    box-shadow: 5px 5px 10px 0 rgba(46,61,73,0.05);
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+.gform_wrapper .gform_footer{
+	margin: 0 !important;
+}
+.gform_wrapper .gform_footer input:hover{
+	outline: none;
+    color: white;
+    border-color: transparent;
+    background-color: #029fcb;
+}
+.gform_wrapper .gform_footer input{
+	width: 100% !important;
+	color: #fff;
+    background-color: #02b3e4;
+    border: 0.125rem solid transparent;
+}
+
+/*footer*/
+.footer__col p {
+    display: block;
+    float: left;
+    margin-top: 13px;
+}
+ul#menu-footer-menu li {
+    margin-right: 20px;
+}
+.footer__nav__col{
+	width: 22%;
+}
+.social li a{
+	display: block !important;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px !important;
+    width: 50px;
+    background: #02C9BF;
+    border-radius: 500px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.5s ease;
+    margin-top: 15px;
+}
+.social li a:hover{
+	    background-color: #fff;
+	    color: #02C9BF;
+}
+header.header.container.header--clone {
+    display: none;
+}

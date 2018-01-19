@@ -1,3 +1,4 @@
+
 html{
     box-sizing:border-box
 }
@@ -30362,9 +30363,6 @@ html.remodal-is-locked{
 .page-business .contact #business_lead_form .button--primary.lg:last-child{
     margin-right:0
 }
-.page-business.corporate-training .hero{
-    background-image:url(../images/banner-bg.jpg)
-}
 .page-business.corporate-training .hero .sentence{
     position:relative;
     white-space:no-wrap;
@@ -49217,95 +49215,135 @@ html.remodal-is-locked{
 
 ======================================== CSS ====================================
 
-
 */
-.navbar-toggle {
-        margin: 0;
-        display: block;
-        border: 0;
-    }
-    .navbar-toggle:hover .icon-bar:nth-child(1) {
-        -webkit-transform: translateY(-2px);
-        -moz-transform: translateY(-2px);
-        -ms-transform: translateY(-2px);
-        -o-transform: translateY(-2px);
-        transform: translateY(-2px);
-    }
-    .navbar-toggle:hover .icon-bar:nth-child(3) {
-        -webkit-transform: translateY(2px);
-        -moz-transform: translateY(2px);
-        -ms-transform: translateY(2px);
-        -o-transform: translateY(2px);
-        transform: translateY(2px);
-    }
-    .navbar-toggle:hover, .navbar-toggle:focus {
-        background-color: transparent !important;
-    }
-    .navbar-toggle:hover:before, .navbar-toggle:focus:before {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-    }
-    .navbar-toggle.in .icon-bar {
-        -webkit-transition: -webkit-transform 150ms linear;
-        transition: -webkit-transform 150ms linear;
-        -o-transition: transform 150ms linear;
-        transition: transform 150ms linear;
-        transition: transform 150ms linear, -webkit-transform 150ms linear;
-    }
-    .navbar-toggle.in .icon-bar:nth-child(1) {
-        -webkit-transform: translateY(8px);
-        -moz-transform: translateY(8px);
-        -ms-transform: translateY(8px);
-        -o-transform: translateY(8px);
-        transform: translateY(8px);
-    }
-    .navbar-toggle.in .icon-bar:nth-child(1) .inner {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    .navbar-toggle.in .icon-bar:nth-child(2) {
-        opacity: 0;
-    }
-    .navbar-toggle.in .icon-bar:nth-child(3) {
-        -webkit-transform: translateY(-8px);
-        -moz-transform: translateY(-8px);
-        -ms-transform: translateY(-8px);
-        -o-transform: translateY(-8px);
-        transform: translateY(-8px);
-    }
-    .navbar-toggle.in .icon-bar:nth-child(3) .inner {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-    }
-    .navbar-toggle .icon-bar {
-        width: 32px;
-        margin-bottom: 6px;
-        background-color: transparent !important;
-        -webkit-transition: -webkit-transform 150ms linear 150ms;
-        transition: -webkit-transform 150ms linear 150ms;
-        -o-transition: transform 150ms linear 150ms;
-        transition: transform 150ms linear 150ms;
-        transition: transform 150ms linear 150ms, -webkit-transform 150ms linear 150ms;
-    }
-    .navbar-toggle .icon-bar .inner {
-        width: 100%;
-        height: 4px;
-        display: block;
-        border-radius: 4px;
-        background-color: #21974C;
-        -webkit-transition: background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
-        transition: background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
-        -o-transition: transform 150ms linear, background-color 150ms linear, opacity 0s linear 150ms;
-        transition: transform 150ms linear, background-color 150ms linear, opacity 0s linear 150ms;
-        transition: transform 150ms linear, background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
-    }
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow-y: hidden;
+}
+.container.menu-open {
+  position: relative;
+  /*right:230px;*/
+  -webkit-transform: translate(-230px, 0);
+  -moz-transform: translate(-230px, 0);
+  -ms-transform: translate(-230px, 0);
+  -o-transform: translate(-230px, 0);
+  transform: translate(-230px, 0);
+  /*      .animation( open 0.6s linear once); */
+  overflow-y: visible;
+}
+.container #nav {
+  text-align: center;
+  margin: 0;
+  display: block;
+    padding-top: 12px;
+}
+.container #nav.open .bars .bar1 {
+  -webkit-transform: rotate(45deg) translate(8px, 7px);
+  -moz-transform: rotate(45deg) translate(8px, 7px);
+  -ms-transform: rotate(45deg) translate(8px, 7px);
+  -o-transform: rotate(45deg) translate(8px, 7px);
+  transform: rotate(45deg) translate(8px, 7px);
+}
+.container #nav.open .bars .bar2 {
+  opacity: 0;
+}
+.container #nav.open .bars .bar3 {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+  -moz-transform: rotate(-45deg) translate(7px, -6px);
+  -ms-transform: rotate(-45deg) translate(7px, -6px);
+  -o-transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+.container #nav li {
+  display: inline-block;
+}
+.container #nav li.bars {
+  display: none;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 15px 10px;
+}
+.container #nav li.bars .bar1,
+.container #nav li.bars .bar2,
+.container #nav li.bars .bar3 {
+  width: 25px;
+  height: 2px;
+  background: #FFF;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.container #nav li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.container #nav li a:hover {
+  border: 2px solid #fff;
+}
+.box {
+  width: 50%;
+  max-width: 425px;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.box h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 10px 0 0;
+}
+@media (max-width: 768px) {
+  
+  .container #nav {
+    width: 230px;
+    max-width: 768px;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: -230px;
+  }
+  .container #nav li.bars {
+    display: block;
+  }
+  .container #nav li a{
+    color: #000;
+  }
+  .container #nav li a:hover {
+    border-color: transparent;
+    color: #15C26B;
+  }
+}

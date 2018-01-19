@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Udicity Comporate Training</title>
-        <link rel="stylesheet" href="../css/sidr.bare.min.css">
+        <link rel="stylesheet" href="../css/jquery.sidr.dark.min.css">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/main-style.css">
         <style>
@@ -18,40 +18,23 @@
 </style>
     </head>
     <body class="page-business corporate-training">
-        <div class="banner featured" data-eyebrow="">
-            <p>
-                <span class="brow"><span data-content-block="header/eyebrow">Sebastian Thrun invites you to enroll today in our new <a href="https://blog.udacity.com/2017/09/self-driving-cars-for-everyone.html">Intro to Self-Driving Cars Nanodegree program</a>.</span></span>
-            </p>
-        </div>
-        <header class="header" dir="ltr">
+        <header class="header container" dir="ltr" style="background: url('../images/banner-bg.jpg') no-repeat bottom;">
             <div class="header__navbar">
-            <div id="sidr">
-                <ul>
-                    <li><a href="index.html">All Examples</a></li>
-                    <li>
-                    <a href="#">Sample link 2</a>
-                    <ul>
-                    <li><a href="#">Child link 1</a></li>
-                    <li><a href="#">Child link 2</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Sample link 3</a></li>
-                </ul>
-            </div>
-                <a id="right-menu" href="#simple-menu">Right Menu</a>
                 <div class="header__navbar--logo">
                     <img src="../images/logo.png" alt="">
                 </div>
-                <div class="header__navbar--navigation">
-                    <nav role="navigation">
-                        <a class="button button--navigation" href="/pathfinder">Explore</a>
-                        <a class="button button--navigation" href="/nanodegree">Nanodegree</a>
-                        <a class="button button--navigation" href="/courses/all">Catalog</a>
-                        <a class="button button--navigation" href="/business">For Business</a>
-                    </nav>
-                </div>
+                <ul id="nav">
+                    <li class="bars">
+                        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+                    </li>
+                </ul>
+                <ul id="nav">
+                    <li><a href="">Explore</a></li>
+                    <li><a href="">Nanodegree</a></li>
+                    <li><a href="">Catalog</a></li>
+                    <li><a href="">For Business</a></li>
+                </ul>
             </div>
-        </header>
         <section class="hero hero--inverse">
             <div class="contain">
                 <div class="hero__content text-left">
@@ -81,6 +64,7 @@
                 </div>
             </div>
         </section>
+        </header>
         <section class="skills">
             <div class="contain contain--small text-center">
                 <h6>Our Clients</h6>
@@ -425,10 +409,6 @@
                   document.body.append(s);
                 }
             </script>
-            <script src="../js/application.js"></script>
-            <script src="../js/jquery.sidr.min.js"></script>
-            <script src="../js/corporate-training.js"></script>
-            <script src="../js/business.js"></script>
             <script src="../js/scripts.js"></script>
         </section>
     </body>

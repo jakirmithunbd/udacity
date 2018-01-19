@@ -5,11 +5,10 @@
 (function ($) {
 	"use strict";
 
-	$('#simple-menu').sidr({
-    	timing: 'ease-in-out',
-    	speed: 500
-  	});
-	
+  $('.bars').click(function(){
+    $('#nav').toggleClass('open');
+    $('.container').toggleClass('menu-open');
+  });
 
 
 }(jQuery));
