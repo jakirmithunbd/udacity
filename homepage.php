@@ -7,7 +7,7 @@ Template Name: Homepage
 $page_id = get_queried_object_id();
 
 ?>
-        <section class="hero hero--inverse">
+        <section class="hero hero--inverse" style="background: url(<?php the_field('banner_bg') ?>);">
             <div class="contain">
                 <div class="hero__content text-left">
                     <h1 class="h6 mb-2 bar bar--bottom"><?php the_field('training_name') ?></h1>
@@ -38,7 +38,6 @@ $page_id = get_queried_object_id();
                 </div>
             </div>
         </section>
-    </header>
         <section class="skills">
             <div class="contain contain--small text-center">
                 <h6><?php the_field('clients_title') ?></h6>

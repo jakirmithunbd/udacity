@@ -9,16 +9,19 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class('page-business corporate-training'); ?>>
-        <header class="header container" dir="ltr" style="background: url(<?php the_field('banner_bg') ?>) no-repeat bottom; background-color: #000;">
+        <header id="sidr" class="header container" dir="ltr">
+            
             <div class="header__navbar">
+                <div class="header__navbar--toggle">
+                  <a href="#sidr" class="nav-toggle">
+                    <span class="bar bar_top"></span>
+                    <span class="bar bar_mid"></span>
+                    <span class="bar bar_bottom"></span>
+                  </a>
+                </div>
                 <div class="header__navbar--logo">
                     <img src="<?php the_field('logo', 'options') ?>" alt="">
                 </div>
-                <ul id="nav">
-                    <li class="bars">
-                        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
-                    </li>
-                </ul>
                 <?php wp_nav_menu( 
                       array(
                       'menu'               => 'Primary Menu',
@@ -33,4 +36,5 @@
                     ); 
                 ?>
             </div>
+        </header>
         

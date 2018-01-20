@@ -7,30 +7,19 @@
                             </div>
                         </a>
                     </section>
-                    <nav class="footer__primary" role="navigation">
-                        <ul class="footer__nav">
-                            <?php if ( is_active_sidebar( 'page-sidebar-1' ) ) : ?>
-                                <li class="footer__nav__col">
-                                   <?php dynamic_sidebar( 'page-sidebar-1' ); ?> 
-                                </li>
-                            <?php endif; ?>
-                            <?php if ( is_active_sidebar( 'page-sidebar-2' ) ) : ?>
-                                <li class="footer__nav__col">
-                                   <?php dynamic_sidebar( 'page-sidebar-2' ); ?> 
-                                </li>
-                            <?php endif; ?>
-                            <?php if ( is_active_sidebar( 'page-sidebar-3' ) ) : ?>
-                                <li class="footer__nav__col">
-                                   <?php dynamic_sidebar( 'page-sidebar-3' ); ?> 
-                                </li>
-                            <?php endif; ?>
-                            <?php if ( is_active_sidebar( 'page-sidebar-4' ) ) : ?>
-                                <li class="footer__nav__col">
-                                   <?php dynamic_sidebar( 'page-sidebar-4' ); ?> 
-                                </li>
-                            <?php endif; ?>
-                        </ul>
-                    </nav>
+                    <section class="footer_widget">
+                        <div class="widget_item">
+                            <h5 class="widget_title">FEATURED PROGRAMS</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </section>
                     <section class="footer__secondary">
                         <div class="footer__col">
                             <?php wp_nav_menu( 

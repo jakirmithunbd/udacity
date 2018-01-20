@@ -2,32 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
         <title>Udicity Comporate Training</title>
         <link rel="stylesheet" href="../css/jquery.sidr.dark.min.css">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/main-style.css">
-        <style>
-#mobile-header {
-    display: none;
-}
-@media only screen and (max-width: 767px){
-    #mobile-header {
-        display: block;
-    }
-}
-</style>
+
     </head>
     <body class="page-business corporate-training">
-        <header class="header container" dir="ltr" style="background: url('../images/banner-bg.jpg') no-repeat bottom;">
+     
+        <header id="sidr" class="header container" dir="ltr">
+            
             <div class="header__navbar">
+                <div class="header__navbar--toggle">
+                  <a href="#sidr" class="nav-toggle">
+                    <span class="bar bar_top"></span>
+                    <span class="bar bar_mid"></span>
+                    <span class="bar bar_bottom"></span>
+                  </a>
+                </div>
                 <div class="header__navbar--logo">
                     <img src="../images/logo.png" alt="">
                 </div>
-                <ul id="nav">
-                    <li class="bars">
-                        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
-                    </li>
-                </ul>
                 <ul id="nav">
                     <li><a href="">Explore</a></li>
                     <li><a href="">Nanodegree</a></li>
@@ -35,7 +31,8 @@
                     <li><a href="">For Business</a></li>
                 </ul>
             </div>
-        <section class="hero hero--inverse">
+        </header>
+        <section class="hero hero--inverse"  style="background: url('../images/banner-bg.jpg')">
             <div class="contain">
                 <div class="hero__content text-left">
                     <h1 class="h6 mb-2 bar bar--bottom">Corporate Training</h1>
@@ -64,7 +61,7 @@
                 </div>
             </div>
         </section>
-        </header>
+        
         <section class="skills">
             <div class="contain contain--small text-center">
                 <h6>Our Clients</h6>
@@ -401,7 +398,8 @@
                     </section>
                 </div>
             </footer>
-            <script src="../js/jquery-1.12.2.min.js"></script>
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/jquery.sidr.min.js"></script>
             <script type="text/javascript">
                 if (!window.jQuery) {
                   var s = document.createElement('script');

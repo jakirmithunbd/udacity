@@ -5,11 +5,18 @@
 (function ($) {
 	"use strict";
 
-  $('.bars').click(function(){
-    $('#nav').toggleClass('open');
-    $('.container').toggleClass('menu-open');
-  });
+  $('.nav-toggle').sidr({
+     	name: 'sidr-main',
+      	side: 'left',
+      	source: '#sidr',
+      	//displace: false,
+      	renaming: false,
+    });
 
+	// $('.closeMenu').on('click', function(){
+	// 	console.log('clicked');
+	// 	$.sidr('close', 'sidr-main');
+	// });
 
 }(jQuery));
 
