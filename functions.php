@@ -74,7 +74,7 @@ function udacity_scripts() {
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script('jquery_min', get_template_directory_uri() . '/js/jquery-1.12.2.min.js', array(), false, false);
-	//wp_enqueue_script('application', get_template_directory_uri() . '/js/application.js', array(), false, true);
+	wp_enqueue_script('application', get_template_directory_uri() . '/js/application.js', array(), false, true);
 	wp_enqueue_script('sidr', get_template_directory_uri() . '/js/jquery.sidr.min.js', array(), false, true);
 	wp_enqueue_script('corporate', get_template_directory_uri() . '/js/corporate-training.js', array(), false, true);
 	wp_enqueue_script('business', get_template_directory_uri() . '/js/business.js', array(), false, true);
@@ -97,38 +97,38 @@ add_action( 'widgets_init', 'clening_sidebar' );
 function clening_sidebar() {
     register_sidebar( array(
 			'name'          => __('Page Sidebar 1', 'text-domain'),
-			'id'            => 'page-sidebar-1',
+			'id'            => 'page-sidebar_1',
 			'description'   => __('This sidebar will be displayed in pages', 'text-domain'),
-			'before_widget' => '<li id="%1$s" class="%2$s footer__nav__col">',
-			'after_widget'  => '</li>',
-			'before_title'  => '<h6 class="footer__nav__toggle">',
+			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="widget_title">',
 			'after_title'   => '</h6>',
     ) );
     register_sidebar( array(
 			'name'          => __('Page Sidebar 2', 'text-domain'),
-			'id'            => 'page-sidebar-2',
+			'id'            => 'page-sidebar_2',
 			'description'   => __('This sidebar will be displayed in pages', 'text-domain'),
-			'before_widget' => '<li id="%1$s" class="%2$s footer__nav__col">',
-			'after_widget'  => '</li>',
-			'before_title'  => '<h6 class="footer__nav__toggle">',
+			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="widget_title">',
 			'after_title'   => '</h6>',
     ) );
     register_sidebar( array(
 			'name'          => __('Page Sidebar 3', 'text-domain'),
-			'id'            => 'page-sidebar-3',
+			'id'            => 'page-sidebar_3',
 			'description'   => __('This sidebar will be displayed in pages', 'text-domain'),
-			'before_widget' => '<li id="%1$s" class="%2$s footer__nav__col">',
-			'after_widget'  => '</li>',
-			'before_title'  => '<h6 class="footer__nav__toggle">',
+			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="widget_title">',
 			'after_title'   => '</h6>',
     ) );
     register_sidebar( array(
 			'name'          => __('Page Sidebar 4', 'text-domain'),
-			'id'            => 'page-sidebar-4',
+			'id'            => 'page-sidebar_4',
 			'description'   => __('This sidebar will be displayed in pages', 'text-domain'),
-			'before_widget' => '<li id="%1$s" class="%2$s footer__nav__col">',
-			'after_widget'  => '</li>',
-			'before_title'  => '<h6 class="footer__nav__toggle">',
+			'before_widget' => '<div id="%1$s" class="%2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6 class="widget_title">',
 			'after_title'   => '</h6>',
     ) );
 }
@@ -145,7 +145,7 @@ function charity_images_custom_login_page() {
     echo '<style type="text/css">
         .login h1 a { background-image:url("'. get_stylesheet_directory_uri().'/images/logo.png") !important; height: 100px !important; width: 100% !important; margin: 0 auto !important; background-size: contain !important; }
 		h1 a:focus { outline: 0 !important; box-shadow: none; }
-        body.login { background-image:url("'. get_stylesheet_directory_uri().'/images/banner.jpg") !important; background-repeat: no-repeat !important; background-attachment: fixed !important; background-position: center !important; background-size: cover !important; position: relative; z-index: 999;}
+        body.login { background-image:url("'. get_stylesheet_directory_uri().'/images/banner.jpeg") !important; background-repeat: no-repeat !important; background-attachment: fixed !important; background-position: center !important; background-size: cover !important; position: relative; z-index: 999;}
   		body.login:before {background-color: #42b1e67a; position: absolute; width: 100%; height: 100%; left: 0; top: 0; content: ""; z-index: -1; }
   		.login form {
   			background: rgba(255,255,255, 0.2) !important;

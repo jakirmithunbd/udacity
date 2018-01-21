@@ -8,17 +8,26 @@
                         </a>
                     </section>
                     <section class="footer_widget">
-                        <div class="widget_item">
-                            <h5 class="widget_title">FEATURED PROGRAMS</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
+                        <?php if ( is_active_sidebar( 'page-sidebar_1' ) ) : ?>
+                            <div class="widget_item">
+                                <?php dynamic_sidebar( 'page-sidebar_1' ); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ( is_active_sidebar( 'page-sidebar_2' ) ) : ?>
+                            <div class="widget_item">
+                                <?php dynamic_sidebar( 'page-sidebar_2' ); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ( is_active_sidebar( 'page-sidebar_3' ) ) : ?>
+                            <div class="widget_item">
+                                <?php dynamic_sidebar( 'page-sidebar_3' ); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ( is_active_sidebar( 'page-sidebar_4' ) ) : ?>
+                            <div class="widget_item">
+                                <?php dynamic_sidebar( 'page-sidebar_4' ); ?>
+                            </div>
+                        <?php endif; ?>
                     </section>
                     <section class="footer__secondary">
                         <div class="footer__col">
@@ -50,7 +59,6 @@
                     </section>
                 </div>
             </footer>
-        </section>
         <?php wp_footer(); ?>
     </body>
 </html>

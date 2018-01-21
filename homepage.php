@@ -7,6 +7,9 @@ Template Name: Homepage
 $page_id = get_queried_object_id();
 
 ?>
+    <?php 
+        if(get_field('banner_enabledisable', $page_id)) :
+    ?>
         <section class="hero hero--inverse" style="background: url(<?php the_field('banner_bg') ?>);">
             <div class="contain">
                 <div class="hero__content text-left">
@@ -38,7 +41,13 @@ $page_id = get_queried_object_id();
                 </div>
             </div>
         </section>
+    <?php endif; ?>
+
+        
         <section class="skills">
+            <?php 
+                if(get_field('clients_enabledisable', $page_id)):
+            ?>
             <div class="contain contain--small text-center">
                 <h6><?php the_field('clients_title') ?></h6>
                 <div class="partners__business">
@@ -53,6 +62,11 @@ $page_id = get_queried_object_id();
                 </div>
             </div>
             <hr>
+            <?php endif; ?>
+
+            <?php 
+                if(get_field('skills_enabledisable', $page_id)):
+            ?>
             <div class="contain contain--small text-center">
                 <h2><?php the_field('skills_title') ?></h2>
                 <p><?php the_field('skills_sub_title') ?></p>
@@ -73,7 +87,13 @@ $page_id = get_queried_object_id();
                 </div>
                 <a class="button--primary lg center" href="<?php the_field('skill_button_url') ?>"><?php the_field('skill_button_text') ?></a>
             </div>
+            <?php endif; ?>
         </section>
+    
+
+    <?php 
+        if(get_field('training_enabledisable', $page_id)):
+    ?>
         <section class="training bg-gradient-secondary text-center">
             <div class="contain">
                 <h2 class="white"><?php the_field('traning_section_title'); ?></h2>
@@ -104,6 +124,11 @@ $page_id = get_queried_object_id();
                 </div>
             </div>
         </section>
+    <?php endif; ?>
+
+    <?php 
+        if(get_field('demo_enabledisable', $page_id)):
+    ?>
         <section class="demo" id="demo">
             <div class="contain">
                 <h2 class="blue text-center"><?php the_field('demo_section_title'); ?></h2>
@@ -119,6 +144,11 @@ $page_id = get_queried_object_id();
                 </a>
             </div>
         </section>
+    <?php endif; ?>
+
+    <?php 
+        if(get_field('contact_enabledisable', $page_id)):
+    ?>
         <section class="contact bg-gray" id="more-information">
             <div class="contain">
                 <h2 class="text-center legible"><?php the_field('contact_section_title') ?></h2>
@@ -128,7 +158,12 @@ $page_id = get_queried_object_id();
                 </div>
             </div>
         </section>
+    <?php endif; ?>
 
+
+    <?php 
+        if(get_field('resources_enabledisable', $page_id)):
+    ?>
         <section class="resources">
             <div class="contain">
                 <h2 class="mb-2 text-center"><?php the_field('resources_section_title') ?></h2>
@@ -144,4 +179,6 @@ $page_id = get_queried_object_id();
                     <?php endforeach; ?>
                 </div>
             </div>
+        </section>
+    <?php endif; ?>
 <?php get_footer(); ?>
