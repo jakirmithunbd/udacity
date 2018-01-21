@@ -8404,7 +8404,7 @@ a.card:hover,.card--nanodegree:hover,.card--nanodegree--video:hover,.page-specia
     }
 }
 .hero--inverse{
-    margin-top:-11rem;
+    margin-top:-6rem;
 }
 .hero--inverse .contain{
     padding-top:4.5rem !important;
@@ -49257,7 +49257,6 @@ html.remodal-is-locked{
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  z-index: 1;
 }
 .container.menu-open {
   position: relative;

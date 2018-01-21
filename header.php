@@ -10,7 +10,6 @@
     </head>
     <body <?php body_class('page-business corporate-training'); ?>>
         <header id="sidr" class="header container" dir="ltr">
-            
             <div class="header__navbar">
                 <div class="header__navbar--toggle">
                   <a href="#sidr" class="nav-toggle">
