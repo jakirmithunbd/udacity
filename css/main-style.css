@@ -5872,7 +5872,9 @@ button,input[type="button"],input[type="reset"],input[type="submit"],.button,.bu
     width:13.75rem;
     color:#fff;
     background-color:#02b3e4;
-    border:0.125rem solid transparent
+    border:0.125rem solid transparent;
+    position: relative;
+    z-index: 1;
 }
 .button--primary:focus,.button--primary.focus,.button--primary:hover{
     outline:none;

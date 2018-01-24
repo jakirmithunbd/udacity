@@ -72,12 +72,8 @@ function udacity_scripts() {
 	 * Enqueue scripts.
 	 */
 	wp_enqueue_script('jquery');
-
 	wp_enqueue_script('jquery_min', get_template_directory_uri() . '/js/jquery-1.12.2.min.js', array(), false, false);
-	wp_enqueue_script('application', get_template_directory_uri() . '/js/application.js', array(), false, true);
 	wp_enqueue_script('sidr', get_template_directory_uri() . '/js/jquery.sidr.min.js', array(), false, true);
-	wp_enqueue_script('corporate', get_template_directory_uri() . '/js/corporate-training.js', array(), false, true);
-	wp_enqueue_script('business', get_template_directory_uri() . '/js/business.js', array(), false, true);
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), false, true);
 
 if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

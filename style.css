@@ -5,6 +5,9 @@ Author: Azizul Haque
 Author URI: http://keendevs.com
 Version:1.0
 */
+#menu-footer-menu {
+    text-align: left;
+}
 .hero:before {
     content: '';
     position: absolute;
